@@ -28,4 +28,6 @@ urlpatterns = [
     path('reservation/', include('reservation.urls')),
     path('reservation/booking/', include(router.urls)),  
     path('reservation/', include(router.urls)),  # Include the router URLs under the 'reservation/' path
+    path('auth/', include('djoser.urls')),
+    path('auth/', include('djoser.urls.authtoken'))
 ]
